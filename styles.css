@@ -255,7 +255,7 @@ img {
 }
 
 .display {
-  font-size: clamp(3rem, 7.2vw, 5.45rem);
+  font-size: clamp(2.8rem, 6.4vw, 4.85rem);
   max-width: 9ch;
 }
 
@@ -268,7 +268,7 @@ img {
 }
 
 .page-hero .display {
-  font-size: clamp(2.75rem, 5.6vw, 4.8rem);
+  font-size: clamp(2.55rem, 4.9vw, 4.15rem);
   max-width: 10ch;
 }
 
@@ -276,7 +276,7 @@ img {
 .telegram-panel h2,
 .resume-cta h2,
 .project-intro h2 {
-  font-size: clamp(2.1rem, 4vw, 3.7rem);
+  font-size: clamp(1.95rem, 3.5vw, 3rem);
   max-width: 12ch;
 }
 
@@ -284,7 +284,7 @@ img {
 .info-card h3,
 .stack-card h3,
 .resume-block h3 {
-  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  font-size: clamp(1.45rem, 2.35vw, 2rem);
 }
 
 .lead,
@@ -922,19 +922,19 @@ img {
   }
 
   .display {
-    font-size: clamp(2.7rem, 14vw, 4.1rem);
+    font-size: clamp(2.5rem, 12vw, 3.6rem);
   }
 
   .page-hero .display {
     max-width: none;
-    font-size: clamp(2.55rem, 13vw, 3.8rem);
+    font-size: clamp(2.35rem, 11.5vw, 3.25rem);
   }
 
   .section-header h2,
   .telegram-panel h2,
   .resume-cta h2,
   .project-intro h2 {
-    font-size: clamp(2rem, 11vw, 3rem);
+    font-size: clamp(1.85rem, 9.5vw, 2.45rem);
     max-width: none;
   }
 
