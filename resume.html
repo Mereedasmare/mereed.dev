@@ -8,19 +8,19 @@
       name="description"
       content="Resume page for Mereed Asmare with experience, technical skills, education, and downloadable PDF."
     />
-    <meta name="theme-color" content="#efe7da" />
+    <meta name="theme-color" content="#f3ecdf" />
     <link rel="canonical" href="https://mereed.dev/resume.html" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-page="resume">
-    <div class="page-wrap">
+    <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">mereed.dev</a>
         <nav class="site-nav" aria-label="Primary">
@@ -28,48 +28,41 @@
           <a data-nav="work" href="./work.html">Work</a>
           <a data-nav="resume" href="./resume.html">Resume</a>
         </nav>
-        <a class="nav-cta" href="mailto:mrdassefa@gmail.com">Email</a>
+        <a class="header-link" href="mailto:mrdassefa@gmail.com">Contact</a>
       </header>
 
       <main class="page-stack">
-        <section class="resume-hero reveal">
-          <div class="resume-hero-copy">
-            <p class="kicker">Resume</p>
-            <h1 class="display">A clearer view of my experience and technical background.</h1>
-            <p class="lede">
+        <section class="resume-hero-simple reveal">
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h1 class="display">Experience, skills, and technical background.</h1>
+            <p class="lead">
               Software Engineering graduate with experience in software
               development, technical troubleshooting, content moderation,
               business operations, and web platform delivery.
             </p>
-            <div class="action-row">
-              <a
-                class="button button-primary"
-                href="./assets/Mereed-Asmare-Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                >Open PDF</a
-              >
-              <a
-                class="button button-secondary"
-                href="./assets/Mereed-Asmare-Resume.pdf"
-                download
-                >Download PDF</a
-              >
-            </div>
           </div>
-
-          <aside class="resume-portrait">
-            <img
-              src="./assets/mereed-photo.jpg"
-              alt="Portrait of Mereed Asmare"
-            />
-          </aside>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="./assets/Mereed-Asmare-Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >Open PDF</a
+            >
+            <a
+              class="button secondary"
+              href="./assets/Mereed-Asmare-Resume.pdf"
+              download
+              >Download PDF</a
+            >
+          </div>
         </section>
 
-        <section class="resume-layout reveal">
+        <section class="resume-paper reveal">
           <aside class="resume-sidebar">
             <div class="sidebar-card">
-              <p class="kicker">Contact</p>
+              <p class="eyebrow">Contact</p>
               <div class="sidebar-links">
                 <a href="mailto:mrdassefa@gmail.com">mrdassefa@gmail.com</a>
                 <a
@@ -89,7 +82,7 @@
             </div>
 
             <div class="sidebar-card">
-              <p class="kicker">Technical Skills</p>
+              <p class="eyebrow">Technical Skills</p>
               <div class="skill-list">
                 <span>Python</span>
                 <span>JavaScript</span>
@@ -103,14 +96,14 @@
                 <span>Linux</span>
                 <span>Git</span>
                 <span>GitHub</span>
+                <span>Troubleshooting</span>
                 <span>Technical Support</span>
-                <span>Debugging</span>
                 <span>Process Improvement</span>
               </div>
             </div>
 
             <div class="sidebar-card">
-              <p class="kicker">Languages</p>
+              <p class="eyebrow">Languages</p>
               <div class="sidebar-copy">
                 <p>English - Fluent</p>
                 <p>Amharic - Native</p>
@@ -120,10 +113,7 @@
 
           <div class="resume-main">
             <section class="resume-section">
-              <div class="section-head">
-                <p class="kicker">Profile Summary</p>
-                <h2 class="section-title">What I bring.</h2>
-              </div>
+              <p class="eyebrow">Profile Summary</p>
               <p class="body-copy">
                 Software Engineering graduate with experience in software
                 development, technical troubleshooting, content moderation, and
@@ -136,9 +126,11 @@
             </section>
 
             <section class="resume-section">
-              <div class="section-head">
-                <p class="kicker">Experience</p>
-                <h2 class="section-title">Recent roles.</h2>
+              <div class="section-header">
+                <div>
+                  <p class="eyebrow">Experience</p>
+                  <h2>Recent roles</h2>
+                </div>
               </div>
 
               <div class="timeline">
@@ -215,9 +207,11 @@
             </section>
 
             <section class="resume-section">
-              <div class="section-head">
-                <p class="kicker">Projects</p>
-                <h2 class="section-title">Applied work.</h2>
+              <div class="section-header">
+                <div>
+                  <p class="eyebrow">Projects</p>
+                  <h2>Applied work</h2>
+                </div>
               </div>
 
               <div class="timeline">
@@ -225,7 +219,7 @@
                   <div class="timeline-meta">
                     <span>Project</span>
                     <a
-                      class="inline-link"
+                      class="mini-link"
                       href="https://ethiodv.app"
                       target="_blank"
                       rel="noreferrer"
@@ -254,7 +248,7 @@
                   <div class="timeline-meta">
                     <span>Project</span>
                     <a
-                      class="inline-link"
+                      class="mini-link"
                       href="https://misterdelala.com"
                       target="_blank"
                       rel="noreferrer"
@@ -280,16 +274,16 @@
               </div>
             </section>
 
-            <section class="resume-summary-grid">
+            <section class="summary-grid">
               <article class="summary-card">
-                <p class="kicker">Education</p>
+                <p class="eyebrow">Education</p>
                 <h3>BSc in Software Engineering</h3>
                 <p class="body-copy">
                   Addis Ababa Science and Technology University, 2023
                 </p>
               </article>
               <article class="summary-card">
-                <p class="kicker">Professional Development</p>
+                <p class="eyebrow">Professional Development</p>
                 <h3>Marketing and customer service coursework</h3>
                 <p class="body-copy">
                   Fundamentals of Digital Marketing, The Open University, 2023.
