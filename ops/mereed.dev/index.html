@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mereed.dev</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe6;
+        --panel: #fffaf2;
+        --text: #181512;
+        --muted: #6b6258;
+        --line: #d9cfbf;
+        --accent: #b4572d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(180, 87, 45, 0.14), transparent 36%),
+          linear-gradient(180deg, #f9f3ea 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(720px, 100%);
+        padding: 3rem;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: color-mix(in srgb, var(--panel) 92%, white 8%);
+        box-shadow: 0 20px 60px rgba(24, 21, 18, 0.08);
+      }
+
+      p {
+        margin: 0 0 1rem;
+        line-height: 1.6;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        margin: 0.4rem 0 1rem;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        line-height: 0.96;
+      }
+
+      .muted {
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Mereed.dev</p>
+      <h1>Portfolio in progress.</h1>
+      <p class="muted">
+        This server is connected and ready for the upcoming personal site,
+        including your resume, projects, and contact details.
+      </p>
+      <p class="muted">
+        The full portfolio will replace this page in the next step.
+      </p>
+    </main>
+  </body>
+</html>
