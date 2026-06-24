@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-ready");
+
 const yearNode = document.getElementById("year");
 
 if (yearNode) {
@@ -16,6 +18,7 @@ if (page) {
 }
 
 const revealNodes = document.querySelectorAll(".reveal");
+const revealAll = () => revealNodes.forEach((node) => node.classList.add("visible"));
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -29,10 +32,11 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.08, rootMargin: "0px 0px -10% 0px" }
   );
 
   revealNodes.forEach((node) => observer.observe(node));
+  window.setTimeout(revealAll, 1400);
 } else {
-  revealNodes.forEach((node) => node.classList.add("visible"));
+  revealAll();
 }
