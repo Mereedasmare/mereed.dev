@@ -4,6 +4,17 @@ if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
+const page = document.body.dataset.page;
+
+if (page) {
+  const activeLink = document.querySelector(`[data-nav="${page}"]`);
+
+  if (activeLink) {
+    activeLink.classList.add("is-active");
+    activeLink.setAttribute("aria-current", "page");
+  }
+}
+
 const revealNodes = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
