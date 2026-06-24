@@ -6,62 +6,76 @@
     <title>Resume | Mereed Asmare</title>
     <meta
       name="description"
-      content="Resume page for Mereed Asmare with experience, technical skills, education, and downloadable PDF."
+      content="Styled resume page for Mereed Asmare with experience, current role at Telegram.org, and downloadable PDF."
     />
-    <meta name="theme-color" content="#f3ecdf" />
+    <meta name="theme-color" content="#0a0814" />
     <link rel="canonical" href="https://mereed.dev/resume.html" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-page="resume">
     <div class="site-shell">
-      <header class="site-header">
-        <a class="brand" href="./index.html">mereed.dev</a>
-        <nav class="site-nav" aria-label="Primary">
-          <a data-nav="home" href="./index.html">Home</a>
-          <a data-nav="work" href="./work.html">Work</a>
-          <a data-nav="resume" href="./resume.html">Resume</a>
-        </nav>
-        <a class="header-link" href="mailto:mrdassefa@gmail.com">Contact</a>
-      </header>
+      <section class="hero-stage hero-stage-compact">
+        <header class="site-header site-header-dark">
+          <a class="brand" href="./index.html">mereed.dev</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a data-nav="home" href="./index.html">Home</a>
+            <a data-nav="work" href="./work.html">Work</a>
+            <a data-nav="resume" href="./resume.html">Resume</a>
+          </nav>
+          <a class="header-link" href="mailto:mrdassefa@gmail.com">Email</a>
+        </header>
 
-      <main class="page-stack">
-        <section class="resume-hero-simple reveal">
-          <div>
-            <p class="eyebrow">Resume</p>
-            <h1 class="display">Experience, skills, and technical background.</h1>
-            <p class="lead">
-              Software Engineering graduate with experience in software
-              development, technical troubleshooting, content moderation,
-              business operations, and web platform delivery.
+        <div class="page-stack">
+          <section class="page-hero reveal">
+            <p class="eyebrow eyebrow-dark">Resume</p>
+            <h1 class="display display-dark">
+              A more personal and visual way to read my background.
+            </h1>
+            <p class="lead lead-dark">
+              This page is designed as a profile overview instead of a formal CV
+              layout, while still keeping the PDF ready to open or download.
             </p>
-          </div>
-          <div class="hero-actions">
-            <a
-              class="button primary"
-              href="./assets/Mereed-Asmare-Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              >Open PDF</a
-            >
-            <a
-              class="button secondary"
-              href="./assets/Mereed-Asmare-Resume.pdf"
-              download
-              >Download PDF</a
-            >
-          </div>
-        </section>
+            <div class="hero-actions">
+              <a
+                class="button primary"
+                href="./assets/Mereed-Asmare-Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                >Open PDF</a
+              >
+              <a
+                class="button secondary button-dark"
+                href="./assets/Mereed-Asmare-Resume.pdf"
+                download
+                >Download PDF</a
+              >
+            </div>
+            <div class="pill-row pill-row-dark page-pill-row">
+              <span>Profile View</span>
+              <span>Current Role</span>
+              <span>Downloadable PDF</span>
+            </div>
+          </section>
+        </div>
+      </section>
 
-        <section class="resume-paper reveal">
-          <aside class="resume-sidebar">
-            <div class="sidebar-card">
+      <main class="content-stack">
+        <section class="resume-layout reveal">
+          <aside class="resume-identity">
+            <div class="resume-photo-card">
+              <img
+                src="./assets/mereed-photo.jpg"
+                alt="Portrait of Mereed Asmare"
+              />
+            </div>
+            <div class="resume-contact-card">
               <p class="eyebrow">Contact</p>
               <div class="sidebar-links">
                 <a href="mailto:mrdassefa@gmail.com">mrdassefa@gmail.com</a>
@@ -80,39 +94,10 @@
                 <a href="./index.html">mereed.dev</a>
               </div>
             </div>
-
-            <div class="sidebar-card">
-              <p class="eyebrow">Technical Skills</p>
-              <div class="skill-list">
-                <span>Python</span>
-                <span>JavaScript</span>
-                <span>Dart</span>
-                <span>Flutter</span>
-                <span>REST APIs</span>
-                <span>AWS</span>
-                <span>GCP</span>
-                <span>Docker</span>
-                <span>Windows</span>
-                <span>Linux</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Troubleshooting</span>
-                <span>Technical Support</span>
-                <span>Process Improvement</span>
-              </div>
-            </div>
-
-            <div class="sidebar-card">
-              <p class="eyebrow">Languages</p>
-              <div class="sidebar-copy">
-                <p>English - Fluent</p>
-                <p>Amharic - Native</p>
-              </div>
-            </div>
           </aside>
 
-          <div class="resume-main">
-            <section class="resume-section">
+          <div class="resume-content-card">
+            <section class="resume-summary">
               <p class="eyebrow">Profile Summary</p>
               <p class="body-copy">
                 Software Engineering graduate with experience in software
@@ -125,170 +110,90 @@
               </p>
             </section>
 
-            <section class="resume-section">
-              <div class="section-header">
-                <div>
-                  <p class="eyebrow">Experience</p>
-                  <h2>Recent roles</h2>
-                </div>
-              </div>
-
-              <div class="timeline">
-                <article class="timeline-item">
-                  <div class="timeline-meta">
-                    <span>Jan 2025 - Present</span>
-                    <span>Telegram Messenger</span>
-                  </div>
-                  <h3>Content Moderator</h3>
-                  <p class="timeline-place">Addis Ababa, Ethiopia</p>
-                  <ul class="clean-list">
-                    <li>
-                      Review and assess more than 30,000 user-generated reports
-                      monthly while maintaining policy compliance and quality
-                      standards.
-                    </li>
-                    <li>
-                      Investigate suspicious activity, document findings, and
-                      escalate complex cases for further review and enforcement.
-                    </li>
-                    <li>
-                      Apply trust and safety policies consistently in a
-                      high-volume moderation environment.
-                    </li>
-                  </ul>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-meta">
-                    <span>Oct 2022 - Present</span>
-                    <span>Yegara Investment PLC</span>
-                  </div>
-                  <h3>General Manager</h3>
-                  <p class="timeline-place">Addis Ababa, Ethiopia</p>
-                  <ul class="clean-list">
-                    <li>
-                      Oversee daily business operations and coordinate
-                      administrative, financial, and operational activities.
-                    </li>
-                    <li>
-                      Lead technology-related initiatives, systems management,
-                      and workflow improvement efforts across the organization.
-                    </li>
-                    <li>
-                      Support website management, digital systems, and
-                      technology adoption to improve operational efficiency.
-                    </li>
-                  </ul>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-meta">
-                    <span>Feb 2022 - Dec 2024</span>
-                    <span>Ashu Electronics Solution</span>
-                  </div>
-                  <h3>Software Developer</h3>
-                  <p class="timeline-place">Addis Ababa, Ethiopia</p>
-                  <ul class="clean-list">
-                    <li>
-                      Developed and maintained software solutions based on
-                      business and client requirements.
-                    </li>
-                    <li>
-                      Participated in software design, testing, debugging,
-                      deployment, and maintenance activities.
-                    </li>
-                    <li>
-                      Assisted with software enhancements, feature
-                      implementation, and technical documentation.
-                    </li>
-                  </ul>
-                </article>
-              </div>
-            </section>
-
-            <section class="resume-section">
-              <div class="section-header">
-                <div>
-                  <p class="eyebrow">Projects</p>
-                  <h2>Applied work</h2>
-                </div>
-              </div>
-
-              <div class="timeline">
-                <article class="timeline-item">
-                  <div class="timeline-meta">
-                    <span>Project</span>
-                    <a
-                      class="mini-link"
-                      href="https://ethiodv.app"
-                      target="_blank"
-                      rel="noreferrer"
-                      >ethiodv.app</a
-                    >
-                  </div>
-                  <h3>EthioDV Platform</h3>
-                  <ul class="clean-list">
-                    <li>
-                      Designed and managed a web-based platform supporting
-                      Ethiopian Diversity Visa applicants.
-                    </li>
-                    <li>
-                      Assisted users with photo preparation, application
-                      guidance, digital consultations, and payment support
-                      services.
-                    </li>
-                    <li>
-                      Improved service accessibility through digital workflows
-                      and online support tools.
-                    </li>
-                  </ul>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-meta">
-                    <span>Project</span>
-                    <a
-                      class="mini-link"
-                      href="https://misterdelala.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      >misterdelala.com</a
-                    >
-                  </div>
-                  <h3>Mister Delala</h3>
-                  <ul class="clean-list">
-                    <li>
-                      Developed a web-based brokerage platform for real estate
-                      and vehicle listings.
-                    </li>
-                    <li>
-                      Designed features connecting buyers and sellers through a
-                      centralized online marketplace.
-                    </li>
-                    <li>
-                      Supported deployment, maintenance, and platform
-                      enhancements with a user-focused design lens.
-                    </li>
-                  </ul>
-                </article>
-              </div>
-            </section>
-
-            <section class="summary-grid">
-              <article class="summary-card">
-                <p class="eyebrow">Education</p>
-                <h3>BSc in Software Engineering</h3>
-                <p class="body-copy">
-                  Addis Ababa Science and Technology University, 2023
-                </p>
+            <section class="resume-grid-block">
+              <article class="resume-block">
+                <p class="eyebrow">Current Role</p>
+                <h3>Content Moderator at Telegram.org</h3>
+                <p class="timeline-place">January 2025 - Present</p>
+                <ul class="clean-list">
+                  <li>
+                    Review and assess more than 30,000 user-generated reports
+                    monthly while maintaining policy compliance and quality
+                    standards.
+                  </li>
+                  <li>
+                    Investigate suspicious activity, document findings, and
+                    escalate complex cases for further review and enforcement.
+                  </li>
+                  <li>
+                    Apply trust and safety policies consistently in a
+                    high-volume moderation environment.
+                  </li>
+                </ul>
               </article>
-              <article class="summary-card">
-                <p class="eyebrow">Professional Development</p>
-                <h3>Marketing and customer service coursework</h3>
-                <p class="body-copy">
-                  Fundamentals of Digital Marketing, The Open University, 2023.
-                  Customer Service coursework, Alison, 2023.
-                </p>
+
+              <article class="resume-block">
+                <p class="eyebrow">Other Experience</p>
+                <div class="mini-timeline">
+                  <div class="mini-entry">
+                    <strong>General Manager</strong>
+                    <span>Yegara Investment PLC, Oct 2022 - Present</span>
+                  </div>
+                  <div class="mini-entry">
+                    <strong>Software Developer</strong>
+                    <span>Ashu Electronics Solution, Feb 2022 - Dec 2024</span>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="resume-grid-block resume-grid-block-three">
+              <article class="resume-block">
+                <p class="eyebrow">Technical Skills</p>
+                <div class="skill-list">
+                  <span>Python</span>
+                  <span>JavaScript</span>
+                  <span>Dart</span>
+                  <span>Flutter</span>
+                  <span>REST APIs</span>
+                  <span>AWS</span>
+                  <span>GCP</span>
+                  <span>Docker</span>
+                  <span>Windows</span>
+                  <span>Linux</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Debugging</span>
+                  <span>Technical Support</span>
+                </div>
+              </article>
+
+              <article class="resume-block">
+                <p class="eyebrow">Projects</p>
+                <div class="mini-timeline">
+                  <div class="mini-entry">
+                    <strong>EthioDV Platform</strong>
+                    <span>Consulting, photo workflows, date conversion, payments</span>
+                  </div>
+                  <div class="mini-entry">
+                    <strong>Mister Delala</strong>
+                    <span>Broker platform for homes and cars</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="resume-block">
+                <p class="eyebrow">Education</p>
+                <div class="mini-timeline">
+                  <div class="mini-entry">
+                    <strong>BSc in Software Engineering</strong>
+                    <span>Addis Ababa Science and Technology University, 2023</span>
+                  </div>
+                  <div class="mini-entry">
+                    <strong>Languages</strong>
+                    <span>English - Fluent, Amharic - Native</span>
+                  </div>
+                </div>
               </article>
             </section>
           </div>
