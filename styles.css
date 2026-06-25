@@ -61,9 +61,12 @@ img {
 }
 
 .site-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   position: relative;
   z-index: 1;
   width: min(var(--content), calc(100% - 1rem));
+  min-height: calc(100vh - 4rem);
   margin: 0 auto;
   padding: 1rem 0 3rem;
 }
@@ -158,6 +161,10 @@ img {
 .resume-layout {
   display: grid;
   gap: 1.2rem;
+}
+
+.content-stack {
+  align-content: start;
 }
 
 .hero-stage {
